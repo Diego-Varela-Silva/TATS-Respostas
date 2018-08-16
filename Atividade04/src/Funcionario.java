@@ -3,6 +3,15 @@ public class Funcionario {
     private String email;
     private float salarioBase;
     private String cargo;
+    
+    public Funcionario() {
+        
+    }
+    
+    public Funcionario(String cargo, float salarioBase) {
+        this.cargo = cargo;
+        this.salarioBase = salarioBase;
+    }
 
     public String getNome() {
         return nome;
