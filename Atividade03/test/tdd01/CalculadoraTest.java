@@ -27,7 +27,7 @@ public class CalculadoraTest {
     }
     
     @Test
-    public void testeLimite1000A5000() {
+    public void testeLimite1000Ate5000() {
         Calculadora calculadora = new Calculadora();
         List<Proposta> propostas = calculadora.calcular(2000F, 1800F);
         assertEquals(3, propostas.size());
