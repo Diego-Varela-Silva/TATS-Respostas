@@ -1,7 +1,7 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-public class CalculadoraSalarioLuquidoTest {
+public class CalculadoraSalarioLiquidoTest {
     
     @Test
     public void desenvolvedorSalarioMaior3000() {
