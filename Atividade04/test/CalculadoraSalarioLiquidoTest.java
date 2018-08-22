@@ -17,4 +17,11 @@ public class CalculadoraSalarioLiquidoTest {
         Assert.assertEquals(1800F, calculadoraSalarioLiquido.calcular(funcionario), 0.1);
     }
     
+    @Test
+    public void DBAMaior2000() {
+        Funcionario funcionario = new Funcionario("DBA", 2500F);
+        CalculadoraSalarioLiquido calculadoraSalarioLiquido =  new CalculadoraSalarioLiquido();
+        Assert.assertEquals(1875F, calculadoraSalarioLiquido.calcular(funcionario), 0.1);
+    }
+    
 }
