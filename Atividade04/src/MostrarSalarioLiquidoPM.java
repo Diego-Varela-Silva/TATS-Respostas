@@ -2,6 +2,7 @@ public class MostrarSalarioLiquidoPM {
     private Funcionario funcionario;
     private float salarioLiquido;
     private String mensagemDeErro;
+    private CalculadoraSalarioLiquido calculadoraSalarioLiquido = new CalculadoraSalarioLiquido();
     
     public Funcionario getFuncionario() {
         return funcionario;
@@ -30,11 +31,13 @@ public class MostrarSalarioLiquidoPM {
     private void validar() {
         mensagemDeErro = "";
         
-        if (funcionario.getCargo().equals("")) mensagemDeErro += "Cargo Vazio\n";
+        if (funcionario.getCargo().equals(""))
+            mensagemDeErro += "Cargo Vazio\n";
         
-        if (funcionario.getSalarioBase() == 0F) mensagemDeErro += "Salario Base Vazio\n";
+        if (funcionario.getSalarioBase() == 0F)
+            mensagemDeErro += "Salario Base Vazio\n";
         
-        salarioLiquido = new CalculadoraSalarioLiquido().calcular(funcionario);
+        salarioLiquido = calculadoraSalarioLiquido.calcular(funcionario);
     }
     
     
